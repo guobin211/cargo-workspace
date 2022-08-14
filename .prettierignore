@@ -1,0 +1,13 @@
+dist
+build
+lib
+npm
+target
+.next
+.turbo
+.cache
+public
+static
+
+*.d.ts
+*.min.js

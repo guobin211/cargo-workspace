@@ -1,26 +1,48 @@
 {
   "name": "base-workspace",
   "version": "0.0.0",
-  "private": true,
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "crates/*",
+    "tests/*",
+    "examples/*"
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:crates": "node .scripts/build_crates.js",
     "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,md,mdx}\"",
+    "lint": "npm run lint:packages && npm run lint:examples && npm rum lint:crates",
+    "lint:packages": "turbo run lint",
+    "lint:crates": "cargo test",
+    "lint:examples": "eslint --fix --ext .js examples tests",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "pre-push-check": "npm run test"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
-    "prettier": "latest",
-    "turbo": "latest"
+    "@commitlint/config-conventional": "^17.0.3",
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.20.0",
+    "eslint-config-base": "workspace:*",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.2",
+    "turbo": "latest",
+    "typescript": "^4.7.4"
   },
   "engines": {
     "npm": ">=7.0.0",
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "packageManager": "pnpm@7.9.0"
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "vitest": "^0.21.1"
+  },
+  "packageManager": "pnpm@7.9.0",
+  "private": true,
+  "type": "module"
 }

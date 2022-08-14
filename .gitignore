@@ -12,6 +12,9 @@ coverage
 .next/
 out/
 build
+dist
+npm
+target
 
 # misc
 .DS_Store
@@ -31,3 +34,4 @@ yarn-error.log*
 
 # turbo
 .turbo
+local

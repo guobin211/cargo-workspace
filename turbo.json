@@ -5,11 +5,15 @@
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]
     },
+    "build:prod": {},
+    "build:beta": {},
     "lint": {
       "outputs": []
     },
     "dev": {
       "cache": false
-    }
+    },
+    "test": {},
+    "release": {}
   }
 }

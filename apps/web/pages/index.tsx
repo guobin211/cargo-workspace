@@ -1,4 +1,4 @@
-import { Button } from "ui";
+import { Button } from 'react-components';
 
 export default function Web() {
   return (
