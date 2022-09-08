@@ -11,3 +11,8 @@ static
 
 *.d.ts
 *.min.js
+*.yml
+*.yaml
+*.toml
+Dockerfile
+client

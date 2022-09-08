@@ -31,7 +31,27 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.eslintcache
 
 # turbo
 .turbo
 local
+.pnpm-store
+
+# andoid
+*.iml
+.gradle
+local.properties
+captures
+.externalNativeBuild
+.cxx
+
+# flutter
+*.class
+*.log
+*.pyc
+*.swp
+.atom/
+.buildlog/
+.history
+.svn/

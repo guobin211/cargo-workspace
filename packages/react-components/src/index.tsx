@@ -1,7 +1,11 @@
-import { ClassAttributes, ButtonHTMLAttributes } from 'react';
+import { HTMLAttributes } from 'react';
 
-const Button = (
-  props: JSX.IntrinsicAttributes & ClassAttributes<HTMLButtonElement> & ButtonHTMLAttributes<HTMLButtonElement>,
-) => <button {...props}></button>;
+export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
+  type: 'primary' | 'secondary' | 'error' | 'loading';
+};
 
-export { Button };
+export const Button = (props: ButtonProps) => {
+  const { type, className, ...rest } = props;
+  const cls = `button ${type} ${className}`;
+  return <button {...rest} className={cls} />;
+};
