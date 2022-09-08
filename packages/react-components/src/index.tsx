@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 
 export type ButtonProps = HTMLAttributes<HTMLButtonElement> & {
-  type: 'primary' | 'secondary' | 'error' | 'loading';
+  type?: 'primary' | 'secondary' | 'error' | 'loading';
 };
 
 export const Button = (props: ButtonProps) => {

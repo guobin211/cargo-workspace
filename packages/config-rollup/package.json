@@ -1,5 +1,5 @@
 {
-  "name": "rollup-config",
+  "name": "config-rollup",
   "version": "0.0.1",
   "scripts": {},
   "devDependencies": {

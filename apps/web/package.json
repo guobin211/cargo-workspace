@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "react-components": "workspace:0.0.0",
     "next": "12.2.3",
     "react": "17.0.2",
-    "react-components": "workspace:0.0.0",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "html2canvas": "^1.4.1",
+    "pngjs": "^6.0.0",
+    "browser-image-compression": "2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
@@ -21,7 +24,8 @@
     "eslint": "7.32.0",
     "eslint-config-base": "workspace:0.0.0",
     "next-transpile-modules": "9.0.0",
-    "ts-config": "workspace:0.0.0",
-    "typescript": "^4.8.2"
+    "config-ts": "workspace:*",
+    "typescript": "^4.8.2",
+    "sass": "1.54.4"
   }
 }

@@ -51,7 +51,7 @@ A simple and easy-to-use Template for Rust and Nodejs, Set up the development en
 - [x] 3、Development for Web And WebAssembly Project
 - [x] 4、Development for Nodejs Project
 - [x] 5、Development for Android and IOS Project
-- 
+
 ### Code Quality
 
 - [x] 1、ESLint for TypeScript and JavaScript

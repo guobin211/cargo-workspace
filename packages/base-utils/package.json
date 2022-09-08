@@ -1,0 +1,10 @@
+{
+  "name": "base-utils",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "config-ts": "workspace:*",
+    "typescript": "^4"
+  }
+}
