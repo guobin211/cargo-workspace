@@ -5,14 +5,15 @@
   "types": "./src/index.tsx",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint src --fix --ext .tsx,.ts"
+    "lint": "eslint src --fix --ext .tsx,.ts",
+    "upgrade": "pnpm update"
   },
   "devDependencies": {
-    "@types/react": "^17.0.49",
+    "@types/react": "^17.0.50",
     "@types/react-dom": "^17.0.17",
+    "config-ts": "workspace:0.0.0",
     "eslint": "^7.32.0",
     "react": "^17.0.2",
-    "config-ts": "workspace:*",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   }
 }

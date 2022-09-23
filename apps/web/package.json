@@ -6,26 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upgrade": "pnpm update"
   },
   "dependencies": {
-    "react-components": "workspace:0.0.0",
-    "next": "12.2.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "browser-image-compression": "2.0.0",
     "html2canvas": "^1.4.1",
+    "next": "12.2.3",
     "pngjs": "^6.0.0",
-    "browser-image-compression": "2.0.0"
+    "react": "17.0.2",
+    "react-components": "workspace:0.0.0",
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.0",
+    "@babel/core": "^7.19.1",
     "@types/node": "^17.0.45",
     "@types/react": "17.0.48",
+    "config-ts": "workspace:0.0.0",
     "eslint": "7.32.0",
     "eslint-config-base": "workspace:0.0.0",
     "next-transpile-modules": "9.0.0",
-    "config-ts": "workspace:*",
-    "typescript": "^4.8.2",
-    "sass": "1.54.4"
+    "sass": "1.54.4",
+    "typescript": "^4.8.3"
   }
 }

@@ -55,3 +55,6 @@ captures
 .buildlog/
 .history
 .svn/
+
+# ios
+project.xcwoekspace/xcuserdata
