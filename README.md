@@ -20,11 +20,14 @@ A simple and easy-to-use Template for Rust and Nodejs, Set up the development en
  ├── examples
  │  └── hello.js
  ├── packages
+ │  ├── base-utils
+ │  ├── config-rollup
+ │  ├── config-ts
+ │  ├── config-esbuild
+ │  ├── config-webpack
  │  ├── eslint-config-base
  │  ├── react-components
- │  ├── rollup-config
- │  ├── ts-config
- │  └── webpack-config
+ │  └── other
  ├── src
  │  └── main.rs
  ├── tests
