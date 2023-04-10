@@ -3,13 +3,5 @@
 version = 3
 
 [[package]]
-name = "base-workspace"
-version = "0.0.1"
-
-[[package]]
-name = "wasm-node"
-version = "0.1.0"
-
-[[package]]
-name = "wasm-web"
+name = "cargo-workspace-cli"
 version = "0.1.0"

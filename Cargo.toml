@@ -1,10 +1,4 @@
-[package]
-name = "base-workspace"
-version = "0.0.1"
-edition = "2021"
-
 [workspace]
 members = [
-    "crates/wasm-node",
-    "crates/wasm-web"
+    "crates/cargo-workspace-cli"
 ]

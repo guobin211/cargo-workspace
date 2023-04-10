@@ -57,3 +57,8 @@ captures
 .buildlog
 .history
 .svn
+.vscode
+.config
+.devcontainer
+.github
+.husky

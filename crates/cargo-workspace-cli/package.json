@@ -1,0 +1,9 @@
+{
+  "name": "cargo-workspace-cli",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "cargo build --release"
+  },
+  "dependencies": {
+  }
+}

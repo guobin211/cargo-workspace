@@ -1,9 +1,9 @@
-# BaseWorkSpace Contributing Guide
+# WorkSpace Contributing Guide
 
 ## Repo SetUp
 
 ```sh
   nodejs 16
-  pnpm 7
-  rust 1.57
+  pnpm 8
+  rust 1.6
 ```

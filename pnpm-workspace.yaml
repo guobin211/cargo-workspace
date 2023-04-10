@@ -2,5 +2,6 @@ packages:
   - "apps/*"
   - "packages/*"
   - "crates/*"
-  - "tests/*"
+  - "plugins/*"
   - "examples/*"
+  - "extensions/*"

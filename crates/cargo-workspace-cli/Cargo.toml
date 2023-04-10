@@ -1,0 +1,12 @@
+[package]
+name = "cargo-workspace-cli"
+version = "0.1.0"
+edition = "2021"
+authors = ["guobin211@201314@gmail.com"]
+description = "A simple Template for Rust and Nodejs, Set up the development environment quickly."
+license = "MIT"
+repository = "https://github.com/guobin211/cargo-workspace"
+readme = "README.md"
+keywords = ["workspace", "cargo", "nodejs", "template"]
+
+[dependencies]
