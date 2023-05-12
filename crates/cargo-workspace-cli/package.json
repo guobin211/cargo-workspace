@@ -4,6 +4,5 @@
   "scripts": {
     "build": "cargo build --release"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

@@ -1,53 +1,49 @@
 {
-	"name": "RustNode",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"VARIANT": "buster"
-		}
-	},
-	"runArgs": [
-		"--cap-add=SYS_PTRACE",
-		"--security-opt",
-		"seccomp=unconfined"
-	],
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"lldb.executable": "/usr/bin/lldb",
-				"files.watcherExclude": {
-					"**/target/**": true,
+  "name": "RustNode",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "buster"
+    }
+  },
+  "runArgs": ["--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "lldb.executable": "/usr/bin/lldb",
+        "files.watcherExclude": {
+          "**/target/**": true,
           "**/dist/**": true,
           "**/build/**": true,
           "**/pkg/**": true,
           "**/npm/**": true,
           "**/esm/**": true,
           "**/cjs/**": true
-				},
-				"rust-analyzer.checkOnSave.command": "clippy"
-			},
-			"extensions": [
-				"vadimcn.vscode-lldb",
-				"mutantdino.resourcemonitor",
-				"tamasfe.even-better-toml",
-				"serayuzgur.crates",
-				"zixuanchen.vitest-explorer",
-				"rust-lang.rust-analyzer",
-				"swellaby.vscode-rust-test-adapter",
-				"esbenp.prettier-vscode",
-				"webfreak.debug",
-				"visualstudioexptteam.vscodeintellicode",
-				"dbaeumer.vscode-eslint",
-				"ms-azuretools.vscode-docker",
-				"ms-ceintl.vscode-language-pack-zh-hans",
-				"streetsidesoftware.code-spell-checker",
-				"ms-vscode-remote.vscode-remote-extensionpack"
-			]
-		}
-	},
-	"postCreateCommand": "npm i -g pnpm && cargo install wasm-pack",
-	"remoteUser": "root",
-	"features": {
-		"node": "16"
-	}
+        },
+        "rust-analyzer.checkOnSave.command": "clippy"
+      },
+      "extensions": [
+        "vadimcn.vscode-lldb",
+        "mutantdino.resourcemonitor",
+        "tamasfe.even-better-toml",
+        "serayuzgur.crates",
+        "zixuanchen.vitest-explorer",
+        "rust-lang.rust-analyzer",
+        "swellaby.vscode-rust-test-adapter",
+        "esbenp.prettier-vscode",
+        "webfreak.debug",
+        "visualstudioexptteam.vscodeintellicode",
+        "dbaeumer.vscode-eslint",
+        "ms-azuretools.vscode-docker",
+        "ms-ceintl.vscode-language-pack-zh-hans",
+        "streetsidesoftware.code-spell-checker",
+        "ms-vscode-remote.vscode-remote-extensionpack"
+      ]
+    }
+  },
+  "postCreateCommand": "npm i -g pnpm && cargo install wasm-pack",
+  "remoteUser": "root",
+  "features": {
+    "node": "16"
+  }
 }

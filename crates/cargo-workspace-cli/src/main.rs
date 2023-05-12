@@ -1,3 +1,5 @@
 fn main() {
-    println!("cargo-workspace-cli");
+    let name = "cargo-workspace-cli";
+    let version = "0.1.1";
+    println!("{} {}", name, version);
 }

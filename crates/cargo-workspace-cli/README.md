@@ -1,10 +1,33 @@
 # cargo-workspace-cli
 
+This tool helps you create rust and nodejs hybrid projects.
+
+## Project Structure
+
+    ```bash
+         .
+        ├──  .config                         // Config for Project
+        ├──  apps                            // Business Apps
+        ├──  crates                          // Rust Crates
+        ├──  examples                        // Examples
+        ├──  extensions                      // VsCode Extensions or IDE Extensions
+        ├──  packages                        // Npm Packages
+        ├──  plugins                         // Plugins For Other Npm Packages
+        ├──  scripts
+        ├──  Cargo.toml
+        ├──  README.md
+        ├──  package.json
+        ├──  pnpm-lock.yaml
+        ├──  pnpm-workspace.yaml
+        └──  vite.config.ts
+
+    ```
+
 ## Usage
 
 ```
     cargo install cargo-workspace-cli
-    cargo workspace new my-project 
+    cargo workspace new my-project
 ```
 
 ## Features
